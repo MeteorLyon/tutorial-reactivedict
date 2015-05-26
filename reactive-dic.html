@@ -1,0 +1,74 @@
+<head>
+  <title>reactive-dic</title>
+</head>
+
+<body>
+  <div class="container">
+  <div class="row">
+  <h1>Just test reactive-dict package</h1>
+  </div>
+
+  <div class="row">
+  {{> main}}
+  </div>
+
+  <div class="row">
+  {{> test}}
+  </div>
+
+  <div class="row">
+  {{> session1}}
+  </div>
+
+  <div class="row">
+  {{> session2}}
+  </div>
+
+  </div>
+</body>
+
+<template name="main">
+  <div class="col s2">
+    tpl - main:
+  </div>
+  <div class="input-field col s9">
+    <input type="text" id="change-name-main" class="validate" />
+    <label for="change-name-main">{{ shouldChange }}</label>
+  </div>
+  <div class="input-field col s1">
+    <button class="changeLimit btn">rand</button>
+  </div>
+</template>
+
+<template name="test">
+  <div class="col s2">
+    tpl - test:
+  </div>
+  <div class="input-field col s9">
+    <input type="text" id="change-name-test" class="validate" />
+    <label for="change-name-test">{{ hehe }}</label>
+  </div>
+  <div class="input-field col s1">
+    <button class="changeLimit btn">rand</button>
+  </div>
+</template>
+
+<template name="session1">
+  <div class="col s2">
+    tpl - session1:
+  </div>
+  <div class="input-field col s10">
+    <input type="text" id="change-name-session1" class="validate" />
+    <label for="change-name-session1">{{ sessionVal }}</label>
+  </div>
+</template>
+
+<template name="session2">
+  <div class="col s2">
+    tpl - session2:
+  </div>
+  <div class="input-field col s10">
+    <input type="text" id="change-name-session2" class="validate" />
+    <label for="change-name-session2">{{ sessionVal }}</label>
+  </div>
+</template>
